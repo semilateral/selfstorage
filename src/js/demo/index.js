@@ -1,6 +1,6 @@
-import { SelfStorage } from '../src/js/SelfStorage.js';
-import { GoogleDrive } from '../src/js/Hosts/GoogleDrive.js';
-import googleDriveCredentials from '../tests/testcredentials/GoogleDrive.json';
+import { SelfStorage } from '../SelfStorage.js';
+import { GoogleDrive } from '../Hosts/GoogleDrive.js';
+import googleDriveCredentials from '../../../tests/testconfig/GoogleDrive.json';
 
 const filenameInput = document.getElementById('filename');
 const fileContentInput = document.getElementById('filecontent');
@@ -10,7 +10,7 @@ const deleteFileButton = document.getElementById('deletefile');
 
 const fileHost = new GoogleDrive(
   googleDriveCredentials.clientId,
-  'http://lvh.me:8080/demo/',
+  'https://semilateral.github.io/selfstorage/google-authenticated.html',
   {
     uploadChunkSize: 262144
   }

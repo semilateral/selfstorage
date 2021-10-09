@@ -1,5 +1,5 @@
 import { GoogleDrive } from '../../src/js/Hosts/GoogleDrive.js';
-import googleDriveCredentials from '../../tests/testcredentials/GoogleDrive.json';
+import googleDriveCredentials from '../../tests/testconfig/GoogleDrive.json';
 import { hostSpec } from '../HostTests.js';
 
 describe('GoogleDrive', function () {
@@ -13,7 +13,7 @@ describe('GoogleDrive', function () {
     },
     constructorArgs: [
       googleDriveCredentials.clientId,
-      'http://lvh.me:8080/demo/'
+      'https://semilateral.github.io/selfstorage/testpage.html'
     ]
   });
 });
