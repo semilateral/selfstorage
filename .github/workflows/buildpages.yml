@@ -21,4 +21,4 @@ jobs:
           ./scripts/buildpages.sh
           git add -A
           git commit -m 'build pages'
-          git push --set-upstream origin pages
+          git push -fu origin pages
